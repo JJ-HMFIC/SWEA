@@ -10,12 +10,12 @@ def is_pal(arr, leng):
     return False
 def is_pal_idx(arr,leng):
     for lst in arr:
-        for i in range(N-leng+1):
-            for j in range(leng//2):
-                if lst[i+j] != lst[i+leng-1-j]:
-                    break
+        for i in range(N-leng+1): # 해당 길이만큼
+            for j in range(leng//2): # 길이의 반을 잘라
+                if lst[i+j] != lst[i+leng-1-j]: # 앞의 부분과 뒤의 부분이 같지 않으면
+                    break # 다음으로
                 else:
-                    return True
+                    return True # 같다면 그 길이가 회문의 길이
     return False
 for test_case in range(1,T+1):
     num = int(input())
