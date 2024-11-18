@@ -1,5 +1,5 @@
 import sys
-sys.stdin =open("../Review/input_1234.txt", "r")
+sys.stdin =open("../../Review/input_1234.txt", "r")
 
 T = 10
 for test_case in range(1,T+1):
